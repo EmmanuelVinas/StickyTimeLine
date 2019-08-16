@@ -97,7 +97,7 @@ class RecyclerSectionItemDecoration(
 
         val childInContact = getChildInContact(parent, headerOffset * 2)
 
-        childInContact?.let {
+        /*childInContact?.let {
             val contractPosition = parent.getChildAdapterPosition(childInContact)
             if (getIsSection(contractPosition) && recyclerViewAttr.isSticky) {
                 val topChild = parent.getChildAt(0) ?: return
@@ -117,7 +117,7 @@ class RecyclerSectionItemDecoration(
                     }
                 }
             }
-        }
+        } */
 
         for (i in 0 until parent.childCount) {
             val child = parent.getChildAt(i)
